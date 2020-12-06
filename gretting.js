@@ -1,9 +1,15 @@
-const form = document.querySelector(".js-form")
+const form = document.querySelector(".js_form")
 const input = document.querySelector("input")
-const greetings = document.querySelector('.js-greetings')
+const greetings = document.querySelector('.js_greetings')
 const user_LS = "currentUser"
 const sowing_CN = "showing"
+/* .greetings{
+  display: none;
+}
 
+.showing{
+  display: block;
+} */
 function saveName(text){
   localStorage.setItem(user_LS , text)
 }
@@ -21,8 +27,9 @@ function askForName(){
 }
 
 function paintGreeting(text) {
-    form.classList.remove(sowing_CN)
+  
     greetings.classList.add(sowing_CN)
+    form.classList.remove(sowing_CN)
     greetings.innerHTML =  `Hello ${text}`
 }
 function loadName() {

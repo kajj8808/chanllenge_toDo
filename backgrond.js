@@ -8,7 +8,7 @@ function handleImgLoad(){
  */
 function printImage(imgNumber){
     const image = new Image()
-    image.src = `./src/image/${(imgNumber + 1) < 10 ? `0${imgNumber + 1}` : imgNumber + 1}.PNG`
+    image.src = `/src/image/${(imgNumber + 1) < 10 ? `0${imgNumber + 1}` : imgNumber + 1}.PNG`
     image.classList.add("bgImage")
     body.appendChild(image)
     

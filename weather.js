@@ -13,8 +13,6 @@ function getWeather(lat , lng){
         weather.innerHTML = `<h3>${temperature}℃ @ ${place}</h3>`
     });
 
-    form.classList.remove(sowing_CN)
-    
 }
 
 function saveCoords(coordsObj){
